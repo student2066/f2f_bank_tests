@@ -1,6 +1,13 @@
 # f2f_bank_tests
 Автоматизированные тесты для веб-приложения F2F Bank, имитирующее сервис переводов между пользователями в стиле СБП.
 
+## Структура проекта:
+25 автотестов (5 файлов) + `Page Objects` (5 файлов)
+Работа включает в себя файл `NOTES.md` в котором описаны найденные баги при тестировании приложения (4 бага: 2 High, 1 Medium, 1 Low).
+Есть файл `README.md` в котором находится документация проекта с инструкциями по запуску + описание тестов с их приоритетом.
+`playwright.config.ts` - конфигурация тестов
+
+
 ## Настройка:
 фрейворк - Playwright  
 язык - TypeScript   
@@ -58,6 +65,8 @@ npx playwright show-report
 
 **используется:** `RegisterPage.ts`
 
+---
+
 ### login.spec.ts
 - **Critical** - успешный вход с валидными данными
 - **High** - ошибка при неверном пароле
@@ -73,6 +82,8 @@ npx playwright show-report
 - На странице есть ссылка на регистрацию
 
 **используется:** `LoginPage.ts и RegisterPage.ts`
+
+---
 
 ### home.spec.ts
 - **Critical** - успешный перевод с валидными данными
@@ -91,6 +102,8 @@ npx playwright show-report
 
 **используется:** `HomePage.ts и LoginPage.ts и RegisterPage.ts`
 
+---
+
 ### transactions.spec.ts
 - **Critical** - отображение страницы транзакций
 - **High** - показ баланса пользователя
@@ -105,6 +118,8 @@ npx playwright show-report
 - Отображается история операций
 
 **используется:** `TransactionsPage.ts и LoginPage.ts и RegisterPage.ts`
+
+---
 
 ### profile.spec.ts
 - **Critical** - отображение страницы профиля
