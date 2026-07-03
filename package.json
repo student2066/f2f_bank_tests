@@ -1,0 +1,24 @@
+{
+  "name": "f2f_bank_tests",
+  "version": "1.0.0",
+  "description": "test for f2f bank demo ozon",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/student2066/f2f_bank_tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/student2066/f2f_bank_tests/issues"
+  },
+  "homepage": "https://github.com/student2066/f2f_bank_tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "typescript": "^6.0.3"
+  }
+}
